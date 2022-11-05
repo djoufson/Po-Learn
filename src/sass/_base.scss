@@ -1,0 +1,49 @@
+.btn {
+  border: 1px solid $primary;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  transition: $base-transition;
+
+  &.btn-primary {
+    color: $white-accentuation;
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:hover{
+      background-color: $secondary-accentuation;
+      border-color: $secondary-accentuation;
+      transition: $base-transition;
+    }
+
+    &:active{
+      background-color: $secondary;
+    }
+  }
+
+  &.btn-light{
+    background-color: $white;
+
+    &:hover{
+      background-color: $white-accentuation;
+      transition: $base-transition;
+    }
+
+    &:active{
+      background-color: $white;
+    }
+  }
+
+  &.btn-dark{
+    background-color: $primary;
+    color: $white-accentuation;
+
+    &:hover{
+      background-color: $primary;
+      transition: $base-transition;
+    }
+
+    &:active{
+      background-color: $primary-accentuation;
+    }
+  }
+}

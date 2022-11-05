@@ -1,0 +1,66 @@
+.card-formation{
+  position: relative;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  gap: 8px;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  span{
+    font-size: 0.8rem;
+    color: $tertiary;
+  }
+
+  .card-price{
+    font-weight: 700;
+  }
+
+  .img{
+    height: 160px;
+    background-color: orange;
+  }
+
+  .master-details{
+    z-index: 500;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    right: -10px;
+    box-shadow: 0 0 10px 0px $tertiary-accentuation;
+    transform: translateX(100%) scale(0);
+    transition: $base-transition;
+
+    h3{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .updated, strong{
+      color: $tertiary;
+      font-size: 13px;
+    }
+
+    strong{
+      font-weight: 700;
+    }
+
+    .details-content {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+
+  &:hover{
+
+    .master-details{
+      transform: translateX(100%);
+      transition: $base-transition;
+    }    
+  }
+}
