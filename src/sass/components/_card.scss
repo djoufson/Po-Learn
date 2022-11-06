@@ -3,8 +3,10 @@
   width: 280px;
   display: flex;
   flex-direction: column;
+  border: 2px solid $white-accentuation;
   height: 300px;
   gap: 8px;
+  margin: 10px 0;
 
   h3 {
     font-weight: 700;
@@ -32,6 +34,7 @@
     gap: 8px;
     position: absolute;
     right: -10px;
+    background-color: $white;
     box-shadow: 0 0 10px 0px $tertiary-accentuation;
     transform: translateX(100%) scale(0);
     transition: $base-transition;

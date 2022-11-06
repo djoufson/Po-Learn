@@ -202,8 +202,10 @@ code {
   width: 280px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #f7f3f3;
   height: 300px;
   gap: 8px;
+  margin: 10px 0;
 }
 .card-formation h3 {
   font-weight: 700;
@@ -227,6 +229,7 @@ code {
   gap: 8px;
   position: absolute;
   right: -10px;
+  background-color: #fff;
   box-shadow: 0 0 10px 0px rgba(106, 111, 115, 0.4196078431);
   transform: translateX(100%) scale(0);
   transition: all ease-in-out 0.1s;
@@ -473,4 +476,11 @@ footer .content {
 .footer-links {
   display: flex;
   gap: 180px;
+}
+
+.selection h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: serif;
+  margin: 20px 0;
 }

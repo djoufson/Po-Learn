@@ -1,17 +1,9 @@
 import CardFormation from "./components/CardFormation";
 import Hero from "./components/Hero";
+import Selection from "./IndexSections/Selection"
 import Navbar from "./components/Navbar"
 
 const Home = () => {
-  const formation = { 
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  }
   return ( 
     <>
       <div className="view">
@@ -23,9 +15,7 @@ const Home = () => {
         </section>
 
         {/* The catalog part */}
-        <section className="catalog">
-          {/* <CardFormation formation={formation}/> */}
-        </section>
+        <Selection/>
 
         {/* Testimonials part */}
         <section className="testimonials">
