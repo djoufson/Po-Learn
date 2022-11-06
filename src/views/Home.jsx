@@ -1,4 +1,5 @@
 import CardFormation from "./components/CardFormation";
+import Navbar from "./components/Navbar"
 
 const Home = () => {
   const formation = { 
@@ -13,8 +14,6 @@ const Home = () => {
   return ( 
     <>
       <h1>Home</h1>
-      <CardFormation formation={ formation }/>
-      <CardFormation formation={ formation }/>
     </>
    );
 }
