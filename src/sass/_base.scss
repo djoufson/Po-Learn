@@ -58,6 +58,18 @@
   cursor: pointer;
 }
 
-.page {
-  padding-top: 100px;
+.page, .view {
+  padding-top: 78px;
+  min-height: 600px;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &.container-pdg{
+    &>div{
+      padding: 35px 60px;
+    }
+  }
 }

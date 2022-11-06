@@ -1,0 +1,33 @@
+footer{
+  background-color: $primary;
+  ul,
+  li,
+  a,
+  p,
+  h2 {
+    color: $tertiary;
+    font-weight: 600;
+    //color: $white-accentuation;
+  }
+
+  li{
+    padding: 5px 0;
+  }
+
+  .footer-links a:hover{
+    color: $white-accentuation;
+    text-decoration: underline;
+  }
+
+  .content{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.footer-links{
+  display: flex;
+  gap: 180px;
+}

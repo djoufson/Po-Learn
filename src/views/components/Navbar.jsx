@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import search from '../../assets/search.svg'
-import next_arrow from '../../assets/next_arrow.svg'
+import arrow from '../../assets/arrow.svg'
 
 const FormateUrl = (s) => {
   let url = ''
@@ -42,10 +42,10 @@ const Navbar = () => {
     "programming-languages",
     "game-development",
     "photography&video",
-    "database"
+    "databases"
   ]
   return ( 
-    <>
+    <header>
       <nav className="nav">
         <div className="nav-logo">
           <Link to='/'>
@@ -61,7 +61,7 @@ const Navbar = () => {
                   <li key={cat}>
                     <Link to={ FormateUrl(cat) }>
                       { FormateString(cat) }
-                      <img src={ next_arrow } alt="" />
+                      <img src={ arrow } alt="" />
                     </Link>
                   </li>
                 ))
@@ -78,7 +78,7 @@ const Navbar = () => {
             <div className="content">
               <div className="content-wrapper">
                 <p>Turn what you know in an opportunity to reach millions around the world</p>
-                <Link to='/' className="btn btn-dark">Learn more</Link>
+                <Link to='/teach-on-polearn' className="btn btn-dark">Learn more</Link>
               </div>
             </div>
         </div>
@@ -87,8 +87,8 @@ const Navbar = () => {
           <Link to='/sign-up' className="btn btn-dark">Sign up</Link>
         </div>
       </nav>
-    </>
+    </header>
    );
 }
- 
+
 export default Navbar;

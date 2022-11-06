@@ -1,4 +1,5 @@
 import CardFormation from "./components/CardFormation";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar"
 
 const Home = () => {
@@ -13,7 +14,24 @@ const Home = () => {
   }
   return ( 
     <>
-      <h1>Home</h1>
+      <div className="view">
+        {/* Hero section */}
+        <section className="hero">
+          <div className="container">
+            <Hero/>
+          </div>
+        </section>
+
+        {/* The catalog part */}
+        <section className="catalog">
+          {/* <CardFormation formation={formation}/> */}
+        </section>
+
+        {/* Testimonials part */}
+        <section className="testimonials">
+
+        </section>
+      </div>
     </>
    );
 }

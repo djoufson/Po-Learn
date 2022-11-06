@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  justify-content: center;
+}
+.page .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page .content h1 {
+  font-size: 30px;
+  font-weight: 700;
+}

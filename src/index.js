@@ -12,6 +12,8 @@ import Home from './views/Home';
 import Navbar from './views/components/Navbar';
 import Login from './views/Login';
 import SignUp from './views/SignUp';
+import Footer from './views/components/Footer';
+import Teach from './views/Teach';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,18 +30,24 @@ root.render(
         path='/sign-up'>
           <SignUp/>
       </Route>
-      <Route 
-        exact 
-        path='/'>
-        <Home/>
+      <Route
+        exact
+        path='/teach-on-polearn'>
+        <Teach/>
       </Route>
       <Route
         exact
         path='/404'>
         <NotFound/>
       </Route>
+      <Route 
+        exact 
+        path='/'>
+        <Home/>
+      </Route>
       <Redirect
         to='/404'/>
     </Switch>
+    <Footer/>
   </BrowserRouter>
 );
