@@ -4,9 +4,9 @@ import './css/index.css';
 import NotFound from './views/NotFound';
 import {
   BrowserRouter,
+  Redirect,
   Route,
-  Switch,
-  Redirect
+  Switch
 } from "react-router-dom";
 import Home from './views/Home';
 import Navbar from './views/components/Navbar';
@@ -19,13 +19,8 @@ root.render(
     <Navbar/>
     <Switch>
       <Route
-        exact
-        path='/404'>
-        <NotFound/>
-      </Route>
-      <Route
-        exact
-        path='/login'>
+        path='/login'
+        exact>
           <Login/>
       </Route>
       <Route
@@ -38,7 +33,13 @@ root.render(
         path='/'>
         <Home/>
       </Route>
-
+      <Route
+        exact
+        path='/404'>
+        <NotFound/>
+      </Route>
+      <Redirect
+        to='/404'/>
     </Switch>
   </BrowserRouter>
 );

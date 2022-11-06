@@ -1,0 +1,33 @@
+@import '../variables';
+
+.page.log-in{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+.form{
+  background-color: $white;
+  padding: 50px;
+  box-shadow: $base-shadow;
+  width: 350px;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}

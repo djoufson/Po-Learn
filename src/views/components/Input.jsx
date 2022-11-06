@@ -1,23 +1,19 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Input = ({ id, placeholder, setValue, type }) => {
   const [className, setClassName] = useState('input-wrapper')
-
-  useEffect(() => {
-    const entry = document.getElementById(id)
-    entry.addEventListener('blur', handleBlur)
-  }, [])
-
+  const [entry, setEntry] = useState(document.getElementById(id))
   const handleClick = (e) => {
     if (className === 'input-wrapper focus'){
       return
     }
+    //console.log(entry)
     entry.focus()
-    setClassName('input-wrapper focus')
+    setClassName("input-wrapper focus")
   }
 
   const handleBlur = (e) => {
-    setClassName('input-wrapper')
+    setClassName("input-wrapper")
   }
 
   return ( 
