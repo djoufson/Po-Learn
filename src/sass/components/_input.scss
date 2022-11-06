@@ -1,0 +1,48 @@
+@keyframes input-anim {
+  from{ height: 0; }
+  to{ height: 30px; }  
+}
+
+.input-wrapper{
+  cursor: text;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  border: $border-primary;
+
+  input{
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    height: 0;
+    transition: $base-transition;
+
+    &:focus{
+      outline: none;
+      animation: input-anim 0.2s forwards;
+    }
+  }
+
+
+
+  .placeholder{
+    cursor: text;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.click-handler{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 10;
+}

@@ -10,31 +10,35 @@ import {
 } from "react-router-dom";
 import Home from './views/Home';
 import Navbar from './views/components/Navbar';
-import About from './views/About';
+import Login from './views/Login';
+import SignUp from './views/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Navbar/>
     <Switch>
+      <Route
+        exact
+        path='/404'>
+        <NotFound/>
+      </Route>
+      <Route
+        exact
+        path='/login'>
+          <Login/>
+      </Route>
+      <Route
+        exact
+        path='/sign-up'>
+          <SignUp/>
+      </Route>
       <Route 
         exact 
         path='/'>
         <Home/>
       </Route>
-      <Route 
-        exact
-        path='/about'>
-        <About/>
-      </Route>
-      <Route
-        exact
-        path='/404'
-      >
-        <NotFound/>
-      </Route>
-      <Redirect
-        path='/404'/>
+
     </Switch>
   </BrowserRouter>
 );

@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="content-wrapper">
               {
                 categories.map(cat => (
-                  <li>
+                  <li key={cat}>
                     <Link to={ FormateUrl(cat) }>
                       { FormateString(cat) }
                       <img src={ next_arrow } alt="" />
@@ -78,13 +78,13 @@ const Navbar = () => {
             <div className="content">
               <div className="content-wrapper">
                 <p>Turn what you know in an opportunity to reach millions around the world</p>
-                <Link className="btn btn-dark">Learn more</Link>
+                <Link to='/' className="btn btn-dark">Learn more</Link>
               </div>
             </div>
         </div>
         <div className="nav-links">
-          <Link className="btn btn-light">Log in</Link>
-          <Link className="btn btn-dark">Sign up</Link>
+          <Link to='/login' className="btn btn-light">Log in</Link>
+          <Link to='/sign-up' className="btn btn-dark">Sign up</Link>
         </div>
       </nav>
     </>
