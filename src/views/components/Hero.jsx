@@ -12,19 +12,14 @@ const sliderContents = [
   },
   {
     id: 2,
-    title: "Unlock the power of your people", 
-    description: "PoLearn Business is trusted by 12.5K+ companies around the world", 
-    link: "Request a demo",
-    url:""
-  },
-  {
-    id: 3,
-    title: "Unlock the power of your people", 
+    title: "Unlock your people", 
     description: "PoLearn Business is trusted by 12.5K+ companies around the world", 
     link: "Request a demo",
     url:""
   }
 ]
+
+const checkSlidesNumber = () => sliderContents.length > 1
 
 const formatImageUrl = (s) => {
   return `../../assets/${s}.png`
@@ -35,6 +30,7 @@ const Hero = () => {
   const [index, setIndex] = useState(0)
   const [slide1Class, setSlide1Class ] = useState("slide-content active")
   const [slide2Class, setSlide2Class ] = useState("slide-content")
+  const [slideWrapperClass, setSlideWrapperClass ] = useState("slider-bg-wrapper")
   const [slide1, setSlide1] = useState(sliderContents[0])
   const [slide2, setSlide2] = useState(sliderContents[1])
 
@@ -46,6 +42,10 @@ const Hero = () => {
       setSlide1Class("slide-content")
       setSlide2Class("slide-content active")
     }
+  }
+
+  const setWrapperActive = (id) => {
+    setSlideWrapperClass(`slider-bg-wrapper active-${ id }`)
   }
 
   const slide = (e) => {
@@ -73,6 +73,7 @@ const Hero = () => {
         setSlide1(sliderContents[index - 1])
         setActive(1)
       }
+      setWrapperActive(index - 1)
       setIndex(index - 1)
     }
   }
@@ -87,6 +88,7 @@ const Hero = () => {
         setSlide1(sliderContents[index + 1])
         setActive(1)
       }
+      setWrapperActive(index + 1)
       setIndex(index + 1)
     }
   }
@@ -95,11 +97,18 @@ const Hero = () => {
     <>
       <div className="hero">
         <div className="slider">
-          {
-            sliderContents.map((s, i) => {
-              <img src={formatImageUrl(s.id)}/>
-            })
-          }
+          <div className={ slideWrapperClass }>
+            {
+              sliderContents.map((s, i) => (
+                <div
+                  // style={{
+                  //   backgroundImage: require("../../assets/slide_bg" + s.id + ".png")
+                  // }}
+                  key={ s.id } className={ "slide-bg slide-bg-" + i }>
+                </div>
+              ))
+            }
+          </div>
           <div className="slider-cards">
             <SliderCard slide={ slide1 } className={ slide1Class }/>
             <SliderCard slide={ slide2 } className={ slide2Class }/>
@@ -111,5 +120,5 @@ const Hero = () => {
     </>
   );
 }
- 
+
 export default Hero;

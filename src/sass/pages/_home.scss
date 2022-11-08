@@ -8,3 +8,39 @@
     margin: 20px 0;
   }
 }
+
+.partners-img{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  img{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+  }
+}
+
+.feedback{
+  background-color: $white-accentuation;  
+
+  .content{
+    max-width: 900px;
+    margin: auto;
+  }
+  .content>div {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    gap: 70px;
+
+    &>div{
+      width: 50%;
+    }
+  }
+
+  .form{
+    max-width: 400px;
+  }
+}

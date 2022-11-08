@@ -8,16 +8,10 @@ const CardFormation = ({ formation, url }) => {
         <Link to={ url }>
           <div className="img" ></div>
         </Link>
-        {/* <Link to={ url }>
-          <img src="" alt="" />
-        </Link> */}
         <Link to={ url }><h3 className="card-title">{ formation.title }</h3></Link>
         <span className="card-author">{ formation.author }</span>
-        {/* <p className="stars">{ formation.stars }</p> */}
-        {/* <p className="rates">{ formation.rates }</p> */}
         <p className="card-price">${ formation.price }</p>
 
-        {/* Master details */}
         <div className="master-details">
           <h3 className="details-title">{ formation.title }</h3>
           <p className="updated">Updated <strong>{ formation.updated }</strong></p>

@@ -25,7 +25,7 @@
   }
 
   &.btn-light, &.btn-icon{
-    background-color: $white;
+    background-color: transparent;
 
     &:hover{
       background-color: $white-accentuation;
@@ -79,4 +79,12 @@ h1 {
   font-weight: 700;
   font-family: serif;
   margin-bottom: 20px;
+}
+
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: serif;
+  margin: 15px 0;
 }

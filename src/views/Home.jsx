@@ -1,7 +1,8 @@
-import CardFormation from "./components/CardFormation";
 import Hero from "./components/Hero";
 import Selection from "./IndexSections/Selection"
-import Navbar from "./components/Navbar"
+import Partners from "./IndexSections/Partners";
+import Feedback from "./IndexSections/Feedback";
+
 
 const Home = () => {
   return ( 
@@ -17,10 +18,11 @@ const Home = () => {
         {/* The catalog part */}
         <Selection/>
 
-        {/* Testimonials part */}
-        <section className="testimonials">
+        {/* Partners part */}
+        <Partners/>
 
-        </section>
+        {/* Feedback part */}
+        <Feedback/>
       </div>
     </>
    );

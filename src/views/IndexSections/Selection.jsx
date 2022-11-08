@@ -72,9 +72,9 @@ const Selection = () => {
 
   return ( 
     <>
-      <div className="view">
-        <div className="container">
-          <section className="selection">
+      <section className="selection">
+        <div className="container container-pdg">
+          <div className="content">
             <h1>A broad selection of courses</h1>
             <p>Choose from 204,000 online video courses with new additions published every month</p>
             <div className="formations"
@@ -89,9 +89,9 @@ const Selection = () => {
                 ))
               }
             </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
     </>
    );
 }
