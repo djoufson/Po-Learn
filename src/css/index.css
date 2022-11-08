@@ -588,6 +588,36 @@ footer .content {
   gap: 180px;
 }
 
+.page.log-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.page.log-in h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form {
+  background-color: #fff;
+  padding: 50px;
+  box-shadow: 0 0 15px 0 rgba(106, 111, 115, 0.4196078431);
+  width: 350px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form form .social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .selection h1 {
   font-size: 30px;
   font-weight: 700;

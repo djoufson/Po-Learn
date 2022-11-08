@@ -2,7 +2,6 @@ import { useState } from "react";
 import google from "../assets/google.svg"
 import github from "../assets/github.svg"
 import Input from "./components/Input";
-import './../css/pages/login.css'
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
