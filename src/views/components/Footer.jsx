@@ -60,7 +60,7 @@ const Footer = () => {
               }
               </div>
               <div className="footer-bottom">
-                <h2>PO LEARN</h2>
+                <h2>PoLearn</h2>
                 <p>&copy; 2022 PoLearn, Inc.</p>
               </div>
             </div>

@@ -1,11 +1,25 @@
 .hero{
   position: relative;
 
+  .filter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 80;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      transparent);
+
+  }
+
   button{
     // Left and right arrows
     position: absolute;
     top: 50%;
     right: 10px;
+    z-index: 90;
     transform: translateY(-50%);
     background-color: $primary;
     border: transparent;
@@ -34,7 +48,6 @@
   width: 100%;
   height: 450px;
   overflow: hidden;
-  background-color: orange;
   
   .slide-content{
     z-index: -1;
@@ -80,7 +93,6 @@
   overflow: hidden;
 
   .slide-bg{
-    background-color: red;
     position: absolute;
     height: 100%;
     width: 100%;

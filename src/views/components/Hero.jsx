@@ -101,9 +101,11 @@ const Hero = () => {
             {
               sliderContents.map((s, i) => (
                 <div
-                  // style={{
-                  //   backgroundImage: require("../../assets/slide_bg" + s.id + ".png")
-                  // }}
+                  style={{
+                    backgroundImage: `url(/slide_${i + 1}.jpg)`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat"
+                  }}
                   key={ s.id } className={ "slide-bg slide-bg-" + i }>
                 </div>
               ))
@@ -114,6 +116,7 @@ const Hero = () => {
             <SliderCard slide={ slide2 } className={ slide2Class }/>
           </div>
         </div>
+        <div className="filter"></div>
         <button className="left" id="left-arrow" onClick={ slide }><img id="left-arrow" src={ arrow } alt="" /></button>
         <button className="right" id="right-arrow" onClick={ slide }><img id="right-arrow" src={ arrow } alt="" /></button>
       </div>

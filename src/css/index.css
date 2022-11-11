@@ -425,10 +425,19 @@ h2 {
 .hero {
   position: relative;
 }
+.hero .filter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  z-index: 80;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
 .hero button {
   position: absolute;
   top: 50%;
   right: 10px;
+  z-index: 90;
   transform: translateY(-50%);
   background-color: #1c1d1f;
   border: transparent;
@@ -454,7 +463,6 @@ h2 {
   width: 100%;
   height: 450px;
   overflow: hidden;
-  background-color: orange;
 }
 .slider .slide-content {
   z-index: -1;
@@ -496,7 +504,6 @@ h2 {
   overflow: hidden;
 }
 .slider-bg-wrapper .slide-bg {
-  background-color: red;
   position: absolute;
   height: 100%;
   width: 100%;
