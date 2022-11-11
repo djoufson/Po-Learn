@@ -10,8 +10,8 @@ router
   .get(courseController.getSelection)
 
 router
-  .route('/:id')
+  .route('/')
   .get(courseController.getAllCourses)
-  .post(auth, courseController.addCourse)
+  .post(courseController.addCourse)
 
 module.exports = router

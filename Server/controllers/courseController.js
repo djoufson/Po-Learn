@@ -1,3 +1,4 @@
+const Course = require('../models/courseModel')
 
 exports.getSelection = (req, res) => {
   const blogs = [
@@ -9,15 +10,50 @@ exports.getSelection = (req, res) => {
   res.status(200).json(blogs)
 }
 
-exports.getAllCourses = (req, res) => {
-  res
-    .status(200)
-    .json({courses: "Hello"})
+exports.getAllCourses = async (req, res) => {
+  try{
+    const courses = await Course.find()
+    res
+      .status(200)
+      .json({
+        status: true,
+        results: courses.length,
+        data: {
+          courses: courses
+        }
+      })
+  }
+  catch (err) {
+    res
+      .status(404)
+      .json({
+        status: false,
+        data: {
+          err
+        }
+      })
+  }
 }
 
-exports.addCourse = (req, res) => {
-  res
-    .status(200)
-    .json({courses: "Hello"})
+exports.addCourse = async (req, res) => {
+  try{
+    const newCourse = await Course.create( req.body )
+    res
+      .status(200)
+      .json({
+        status: true,
+        data:{
+          course: newCourse
+        }
+      })
+  }
+  catch(err) {
+    res
+      .status(400)
+      .json({
+        status: false,
+        message: err
+      })
+  }
 }
 
