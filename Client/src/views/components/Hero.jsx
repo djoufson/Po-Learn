@@ -12,7 +12,7 @@ const sliderContents = [
   },
   {
     id: 2,
-    title: "Unlock your people", 
+    title: "Unlock your to people", 
     description: "PoLearn Business is trusted by 12.5K+ companies around the world", 
     link: "Request a demo",
     url:""
