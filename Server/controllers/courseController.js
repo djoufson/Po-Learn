@@ -57,3 +57,18 @@ exports.addCourse = async (req, res) => {
   }
 }
 
+exports.updateCourse = async (req, res) => {
+  try{
+    res
+      .status(200)
+      .json({
+        status: true,
+        data: {
+          text: "Helle"
+        }
+      })
+  }
+  catch(err){
+    
+  }
+}

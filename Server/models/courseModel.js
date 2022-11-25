@@ -20,7 +20,8 @@ const courseSchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
-  details: String
+  details: String,
+  path: String
 })
 
 const Course = mongoose.model("Course", courseSchema)

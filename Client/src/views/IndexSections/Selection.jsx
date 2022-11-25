@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import CardFormation from "../components/CardFormation"
 
 const formations = [
@@ -62,12 +61,83 @@ const formations = [
     updated: "September 2015",
     details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
   },
+  { 
+    id: 7,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
+  { 
+    id: 8,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
+  { 
+    id: 9,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
+  { 
+    id: 10,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
+  { 
+    id: 11,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
+  { 
+    id: 12,
+    title: "Learn Python: The complete Python Programming Course", 
+    author: "John Doe, The Codex", 
+    price: 84.99, 
+    stars: 4.3, 
+    rates: 3761,
+    updated: "September 2015",
+    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+  },
 ]
 
 const Selection = () => {
 
   const formateUrl = (s) => {
-    return s
+    let url = ""
+    // console.log(s.length)
+    
+    for(let i = 0; i < s.length; i++){
+      if(s.charAt(i) === " "){
+        url = url.concat("-")
+        continue
+      }
+      url = url.concat(s.charAt(i))
+    }
+
+    return `courses/${url}`
   }
 
   return ( 

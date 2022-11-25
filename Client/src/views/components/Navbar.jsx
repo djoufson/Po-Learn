@@ -13,7 +13,7 @@ const FormateUrl = (s) => {
       url += s[i]
     }
   }
-  return `courses/${url}`
+  return `courses/categories/${url}`
 }
 
 const FormateString = (s) => {
@@ -21,13 +21,13 @@ const FormateString = (s) => {
   for (let i = 0; i < s.length; i++) {
     if (s[i] === '-')
     {
-      result += ' '
+      result = result.concat(' ')
     }
     else if (s[i] === '&'){
-      result += ' & '
+      result = result.concat('&')
     }
     else{
-      result += s[i]
+      result = result.concat(s.charAt(i))
     }
   }
 
