@@ -1,0 +1,16 @@
+.profile-page{
+  height: 100vh;
+  bottom: 0;
+  display: flex;
+
+  .dashboard{
+    width: 300px;
+    background-color: $primary;
+    
+    h1{
+      a{
+        color: white;
+      }
+    }
+  }
+}

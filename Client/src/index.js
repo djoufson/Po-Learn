@@ -4,22 +4,20 @@ import './css/index.css';
 import NotFound from './views/NotFound';
 import {
   BrowserRouter,
-  Redirect,
   Route,
   Switch
 } from "react-router-dom";
 import Home from './views/Home';
-import Navbar from './views/components/Navbar';
 import Login from './views/Login';
 import SignUp from './views/SignUp';
-import Footer from './views/components/Footer';
 import Teach from './views/Teach';
-import Dashboard from './views/Dashboard';
+import Profile from './views/Profile';
+import Course from './views/Course';
+import Categories from './views/Categories';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Navbar/>
     <Switch>
       <Route
         path='/login'
@@ -39,21 +37,32 @@ root.render(
       <Route
         exact
         path='/profile'>
-        <Dashboard/>
-      </Route>
-      <Route
-        exact
-        path='/404'>
-        <NotFound/>
+        <Profile/>
       </Route>
       <Route 
         exact 
         path='/'>
         <Home/>
       </Route>
-      <Redirect
-        to='/404'/>
+      <Route 
+        exact
+        path='/courses/categories/:slug'>
+        <Categories/>
+      </Route>
+      <Route 
+        exact
+        path='/courses/:slug'>
+        <Course/>
+      </Route>
+      <Route 
+        exact
+        path='/courses/:slug/:id'>
+        <Course/>
+      </Route>
+      <Route
+        path="*">
+        <NotFound/>
+      </Route>
     </Switch>
-    <Footer/>
   </BrowserRouter>
 );

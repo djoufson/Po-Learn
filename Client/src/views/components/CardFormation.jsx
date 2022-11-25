@@ -4,7 +4,6 @@ const CardFormation = ({ formation, url }) => {
   return ( 
     <>
       <div className="card-formation">
-        
         <Link to={ url }>
           <div className="img" ></div>
         </Link>

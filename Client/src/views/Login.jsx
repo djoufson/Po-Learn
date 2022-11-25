@@ -3,16 +3,20 @@ import google from "../assets/google.svg"
 import github from "../assets/github.svg"
 import Input from "./components/Input";
 import { Link } from "react-router-dom";
+import useLoad from "../utilities/hooks/useLoad";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 
 const Login = () => {
-
+  useLoad()
   const [name, setName] = useState('')
   const submission = (e) => {
     e.preventDefault()
   }
   return ( 
     <>
+      <Navbar/>
       <div className="page log-in">
         <div className="form">
           <h2>Log in and retrieve your lessons</h2>
@@ -27,6 +31,7 @@ const Login = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

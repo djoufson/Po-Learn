@@ -1,7 +1,14 @@
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+
 const Teach = () => {
   return ( 
     <>
-      <div className="view"></div>
+      <Navbar/>
+      <div className="view">
+        <h1>Teach on PoLearn</h1>
+      </div>
+      <Footer/>
     </>
    );
 }

@@ -13,7 +13,7 @@ const FormateUrl = (s) => {
       url += s[i]
     }
   }
-  return `courses/categories/${url}`
+  return `/courses/categories/${url}`
 }
 
 const FormateString = (s) => {
@@ -83,6 +83,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="nav-links">
+          <Link to='/profile' className="btn btn-light">Profile</Link>
           <Link to='/login' className="btn btn-light">Log in</Link>
           <Link to='/sign-up' className="btn btn-dark">Sign up</Link>
         </div>

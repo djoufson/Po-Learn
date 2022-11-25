@@ -224,6 +224,7 @@ h2 {
   height: 300px;
   gap: 8px;
   margin: 10px 0;
+  transition: all ease-in-out 0.1s;
 }
 .card-formation h3 {
   font-weight: 700;
@@ -266,6 +267,10 @@ h2 {
 .card-formation .master-details .details-content {
   font-size: 15px;
   line-height: 19px;
+}
+.card-formation:hover {
+  box-shadow: 0 0 15px 0 rgba(106, 111, 115, 0.2823529412);
+  transition: all ease-in-out 0.1s;
 }
 .card-formation:hover .master-details {
   transform: translateX(100%);
@@ -662,4 +667,17 @@ footer .content {
 }
 .feedback .form {
   max-width: 400px;
+}
+
+.profile-page {
+  height: 100vh;
+  bottom: 0;
+  display: flex;
+}
+.profile-page .dashboard {
+  width: 300px;
+  background-color: #1c1d1f;
+}
+.profile-page .dashboard h1 a {
+  color: white;
 }

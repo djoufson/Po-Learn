@@ -137,7 +137,7 @@ const Selection = () => {
       url = url.concat(s.charAt(i))
     }
 
-    return `courses/${url}`
+    return `/courses/${url}`
   }
 
   return ( 
