@@ -20,7 +20,7 @@
     }
   }
 
-  ul, .teach{
+  .dropdown{
     position: relative;
     cursor: pointer;
 
@@ -105,7 +105,7 @@
   justify-content: space-between;
 }
 
-.teach{
+.teach, .cart{
   .content-wrapper{
     display: flex;
     gap: 20px;

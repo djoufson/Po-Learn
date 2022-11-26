@@ -13,12 +13,11 @@
   margin-top: 20px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 
   img{
-    width: 100px;
+    width: auto;
     height: 40px;
-    background-color: orange;
   }
 }
 

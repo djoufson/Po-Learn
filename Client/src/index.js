@@ -1,12 +1,14 @@
 import React from 'react';
+import store from './app/store';
+import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
 import NotFound from './views/NotFound';
 import {
   BrowserRouter,
   Route,
   Switch
 } from "react-router-dom";
+import './css/index.css';
 import Home from './views/Home';
 import Login from './views/Login';
 import SignUp from './views/SignUp';

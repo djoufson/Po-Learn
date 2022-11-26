@@ -268,10 +268,6 @@ h2 {
   font-size: 15px;
   line-height: 19px;
 }
-.card-formation:hover {
-  box-shadow: 0 0 15px 0 rgba(106, 111, 115, 0.2823529412);
-  transition: all ease-in-out 0.1s;
-}
 .card-formation:hover .master-details {
   transform: translateX(100%);
   transition: all ease-in-out 0.1s;
@@ -297,38 +293,38 @@ h2 {
   font-weight: 700;
   font-size: 1.6rem;
 }
-.nav ul, .nav .teach {
+.nav .dropdown {
   position: relative;
   cursor: pointer;
 }
-.nav ul .content, .nav .teach .content {
+.nav .dropdown .content {
   display: flex;
   transform: scale(0);
   padding-top: 35px;
   position: absolute;
   transition: all ease-in-out 0.1s;
 }
-.nav ul .content li, .nav .teach .content li {
+.nav .dropdown .content li {
   text-transform: capitalize;
 }
-.nav ul .content li a, .nav .teach .content li a {
+.nav .dropdown .content li a {
   padding: 10px 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.nav ul .content li img, .nav .teach .content li img {
+.nav .dropdown .content li img {
   width: 0.9rem;
   height: 0.9rem;
 }
-.nav ul .content li:hover a, .nav .teach .content li:hover a {
+.nav .dropdown .content li:hover a {
   color: #652fec;
   cursor: pointer;
 }
-.nav ul:hover, .nav .teach:hover {
+.nav .dropdown:hover {
   color: #652fec;
 }
-.nav ul:hover .content, .nav .teach:hover .content {
+.nav .dropdown:hover .content {
   transform: scale(1);
   transition: all ease-in-out 0.1s;
 }
@@ -368,15 +364,15 @@ h2 {
   justify-content: space-between;
 }
 
-.teach .content-wrapper {
+.teach .content-wrapper, .cart .content-wrapper {
   display: flex;
   gap: 20px;
   flex-direction: column;
 }
-.teach .content-wrapper a {
+.teach .content-wrapper a, .cart .content-wrapper a {
   text-align: center;
 }
-.teach .content-wrapper p {
+.teach .content-wrapper p, .cart .content-wrapper p {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -605,7 +601,6 @@ footer .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 .page.log-in h2 {
   margin-bottom: 25px;
@@ -641,12 +636,11 @@ footer .content {
   margin-top: 20px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .partners-img img {
-  width: 100px;
+  width: auto;
   height: 40px;
-  background-color: orange;
 }
 
 .feedback {

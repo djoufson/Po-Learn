@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { RiShoppingCart2Line } from "react-icons/ri"
 import search from '../../assets/search.svg'
 import arrow from '../../assets/arrow.svg'
 
@@ -52,7 +53,7 @@ const Navbar = () => {
             <p>PoLearn</p>
           </Link>
         </div>
-        <ul>
+        <ul className="dropdown">
           Categories
           <div className="content">
             <div className="content-wrapper">
@@ -73,7 +74,7 @@ const Navbar = () => {
           <img src={ search } alt="" />
           <input type="text" placeholder="Search for anything" />
         </div>
-        <div className="teach">
+        <div className="teach dropdown">
             Teach on PoLearn
             <div className="content">
               <div className="content-wrapper">
@@ -83,6 +84,15 @@ const Navbar = () => {
             </div>
         </div>
         <div className="nav-links">
+          <div className="dropdown cart">
+            <Link className="btn"><RiShoppingCart2Line/></Link>
+            <div className="content">
+              <div className="content-wrapper">
+                <p>The courses you added to your cart</p>
+
+              </div>
+            </div>
+          </div>
           <Link to='/profile' className="btn btn-light">Profile</Link>
           <Link to='/login' className="btn btn-light">Log in</Link>
           <Link to='/sign-up' className="btn btn-dark">Sign up</Link>

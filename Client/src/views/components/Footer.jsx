@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 
   const formateUrl = (s) => {
-    let url = ''
+    let url = '/'
     for (let i = 0; i < s.length; i++){
       if (s[i] === ' '){
         url += '-'

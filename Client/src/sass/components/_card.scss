@@ -61,9 +61,6 @@
   }
 
   &:hover{
-    box-shadow: $base-shadow-faded;
-    transition: $base-transition;
-
     .master-details{
       transform: translateX(100%) ;
       transition: $base-transition;

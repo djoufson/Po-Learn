@@ -3,8 +3,10 @@ import DashNavigation from "./components/DashNavigation";
 import DashAside from "./components/DashAside";
 import Downloads from "./ProfileTabs/Downloads"
 import Uploads from "./ProfileTabs/Uploads"
+import useLoad from "../utilities/hooks/useLoad";
 
 const Profile = () => {
+  useLoad()
   const tabs = [
     Uploads,
     Downloads

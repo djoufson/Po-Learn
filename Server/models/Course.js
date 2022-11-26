@@ -6,6 +6,12 @@ const courseSchema = new mongoose.Schema({
     required: [true, "The title is required"],
     unique: true
   },
+  slug: String,
+  category: {
+    type: String,
+    required: [true, "The category is required"]
+  },
+  tags: Array,
   author: {
     type: String,
     required: [true, "The author is required"]
