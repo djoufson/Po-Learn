@@ -8,7 +8,9 @@ const SliderCard = ({ slide, className }) => {
         <h1>{ slide.title }</h1>
         <p>{ slide.description }</p>
           
-        <Link className="btn btn-primary" to={ slide.url }>
+        <Link 
+          className="btn btn-primary" 
+          to={ slide.url }>
           { slide.link }
         </Link>
       </div>

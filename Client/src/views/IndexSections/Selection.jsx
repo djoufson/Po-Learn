@@ -3,124 +3,64 @@ import CardFormation from "../components/CardFormation"
 const formations = [
   { 
     id: 1,
-    title: "Learn Python: The complete Python Programming Course", 
+    title: "learn python: the complete python programming course", 
     author: "John Doe, The Codex", 
     price: 84.99, 
     stars: 4.3, 
     rates: 3761,
+    slug: "the complete python programming course",
     updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+    details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam.",
+    thumbnail: "courses/thumbnails/course1.jpg"
   },
   { 
     id: 2,
-    title: "Learning Python for Data Analysis and Visualization", 
+    title: "learn python: the complete python programming course", 
     author: "John Doe, The Codex", 
     price: 84.99, 
     stars: 4.3, 
     rates: 3761,
+    slug: "the complete python programming course",
     updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+    details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam.",
+    thumbnail: "courses/thumbnails/course2.jpg"
   },
   { 
     id: 3,
-    title: "Learn Python: The complete Python Programming Course", 
+    title: "learn python: the complete python programming course", 
     author: "John Doe, The Codex", 
     price: 84.99, 
     stars: 4.3, 
     rates: 3761,
+    slug: "the complete python programming course",
     updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+    details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam.",
+    thumbnail: "courses/thumbnails/course3.jpg"
   },
   { 
     id: 4,
-    title: "Learn Python: The complete Python Programming Course", 
+    title: "learn python: the complete python programming course", 
     author: "John Doe, The Codex", 
     price: 84.99, 
     stars: 4.3, 
     rates: 3761,
+    slug: "the complete python programming course",
     updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
+    details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam.",
+    thumbnail: "courses/thumbnails/course4.jpg"
   },
   { 
     id: 5,
-    title: "Learn Python: The complete Python Programming Course", 
+    title: "learn python: the complete python programming course", 
     author: "John Doe, The Codex", 
     price: 84.99, 
     stars: 4.3, 
     rates: 3761,
+    slug: "the complete python programming course",
     updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 6,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 7,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 8,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 9,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 10,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 11,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
-  { 
-    id: 12,
-    title: "Learn Python: The complete Python Programming Course", 
-    author: "John Doe, The Codex", 
-    price: 84.99, 
-    stars: 4.3, 
-    rates: 3761,
-    updated: "September 2015",
-    details: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam."
-  },
+    details: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut lLorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facere quo ut necessitatibus ipsum impedit ad laborum vero dolor quibusdam.",
+    thumbnail: "courses/thumbnails/course5.jpg"
+  }
 ]
 
 const Selection = () => {
@@ -155,7 +95,11 @@ const Selection = () => {
               }}>
               {
                 formations.map(formation => (
-                  <CardFormation url={formateUrl(formation.title)} key={formation.id} formation={ formation }/>
+                  <CardFormation 
+                    paht={`http://localhost:8000/${formation.thumbnail}`} 
+                    url={formateUrl(formation.slug)} 
+                    key={formation.id} 
+                    formation={ formation }/>
                 ))
               }
             </div>

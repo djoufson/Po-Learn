@@ -11,6 +11,8 @@
 
   h3 {
     font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: capitalize;
   }
 
   span{
@@ -40,11 +42,6 @@
     transform: translateX(100%) scale(0);
     transition: $base-transition;
 
-    h3{
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
-
     .updated, strong{
       color: $tertiary;
       font-size: 13px;
@@ -61,6 +58,8 @@
 
     .card-bottom{
       display: flex;
+      align-items: center;
+      justify-content: start;
       gap: 10px;
       width: 100%;
 

@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+# media static files
+/Server/public/courses/videos
+
 # testing
 /coverage
 
@@ -22,3 +25,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+Client/node_modules/.cache/.eslintcache
+Client/node_modules/.cache/.eslintcache
+*.pack

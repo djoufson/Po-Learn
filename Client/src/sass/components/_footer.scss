@@ -4,14 +4,27 @@ footer{
   li,
   a,
   p,
-  h2 {
+  h2, 
+  span {
     color: $tertiary;
+    text-transform: capitalize;
     font-weight: 600;
     //color: $white-accentuation;
   }
 
-  li{
+  li, span{
     padding: 5px 0;
+    transition: $base-transition;
+  }
+
+  .links{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    a{
+      font-size: 25px;
+    }
   }
 
   .footer-links a:hover{
@@ -19,11 +32,15 @@ footer{
     text-decoration: underline;
   }
 
+  .footer-links li:hover{
+    transform: translateX(2px);
+    transition: $base-transition;
+  }
+
   .content{
-    height: 230px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
   }
 }
 

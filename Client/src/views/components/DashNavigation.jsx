@@ -3,12 +3,16 @@ import { GoDeviceDesktop } from "react-icons/go"
 import { BsChatLeftText, BsFillBarChartFill } from "react-icons/bs"
 import { TbTool } from "react-icons/tb"
 import { IoMdHelpCircleOutline } from "react-icons/io"
-import { useState } from "react";
 import appIcon from "../../assets/appicon.png"
 
 const DashNavigation = ({changeTab}) => {
-  const [prevActive, setPrevActive] = useState(null)
   const handleChangeTab = (e, index) => {
+    let i = 0
+    while(e.nodeName !== "BUTTON" && i < 3){
+      e = e.parentElement
+      console.log(e)
+      i++;
+    }
     const prevActive = document.querySelector(".dashboard button.active")
     const currentActive = e
 

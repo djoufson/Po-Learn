@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { RiShoppingCart2Line } from "react-icons/ri"
+import { FaUserNinja, FaRegUser } from "react-icons/fa"
 import appIcon from '../../assets/appicon.png'
 import search from '../../assets/search.svg'
 import arrow from '../../assets/arrow.svg'
@@ -21,8 +22,7 @@ const FormateUrl = (s) => {
 const FormateString = (s) => {
   let result = ''
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === '-')
-    {
+    if (s[i] === '-'){
       result = result.concat(' ')
     }
     else if (s[i] === '&'){
@@ -92,14 +92,14 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
           <div className="dropdown cart">
-            <Link className="btn" to="/"><RiShoppingCart2Line/></Link>
+            <Link className="btn btn-light btn-rounded" to="/"><RiShoppingCart2Line/></Link>
             <div className="content">
               <div className="content-wrapper">
                 <p>The courses you added to your cart</p>
               </div>
             </div>
           </div>
-          <Link to='/profile' className="btn btn-light">Profile</Link>
+          <Link to='/profile' className="btn btn-dark btn-rounded"><FaRegUser/></Link>
           <Link to='/login' className="btn btn-light">Log in</Link>
           <Link to='/sign-up' className="btn btn-dark">Sign up</Link>
         </div>

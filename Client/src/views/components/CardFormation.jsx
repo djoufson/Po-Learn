@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa"
 import image from "./../../assets/slide_2.jpg"
 
-const CardFormation = ({ formation, url }) => {
+const CardFormation = ({ formation, url, paht }) => {
   return ( 
     <>
       <div className="card-formation">
         <Link to={ url }>
-          <img className="img" src={ image } alt=""></img>
+          <img className="img" src={ paht } alt=""></img>
         </Link>
         <Link to={ url }><h3 className="card-title">{ formation.title }</h3></Link>
         <span className="card-author">{ formation.author }</span>

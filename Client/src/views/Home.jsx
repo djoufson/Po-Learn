@@ -1,4 +1,4 @@
-import Hero from "./components/Hero";
+import Hero from "./IndexSections/Hero";
 import Selection from "./IndexSections/Selection"
 import Partners from "./IndexSections/Partners";
 import Feedback from "./IndexSections/Feedback";
@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import BackToTop from "./components/BackToTop";
 import TeachSection from "./IndexSections/TeachSection";
+import Upskill from "./IndexSections/UpSkill";
 
 
 const Home = () => {
@@ -24,6 +25,9 @@ const Home = () => {
 
         {/* Partners part */}
         <Partners/>
+
+        {/*  */}
+        <Upskill/>
 
         {/* Teach on PoLearn */}
         <TeachSection/>

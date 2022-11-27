@@ -3,14 +3,14 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid $primary;
   padding: 1rem 1rem;
   font-weight: 600;
   transition: $base-transition;
 
-  >*{
-    transform: translateY(22%);
-  }
 
   &.btn-rounded {
     width: auto;
@@ -86,7 +86,7 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.3rem;
   font-weight: 700;
   font-family: serif;
   margin-bottom: 20px;

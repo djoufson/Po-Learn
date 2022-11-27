@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const app = require('./app')
 
-console.clear()
+// console.clear()
 dotenv.config({ path: './config.env' })
 const port = process.env['PORT']
 const dbString = process.env['DATABASE']

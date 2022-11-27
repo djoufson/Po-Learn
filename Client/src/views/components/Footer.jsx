@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import appIcon from "../../assets/appicon.png"
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"
 
 const Footer = () => {
 
@@ -19,25 +21,25 @@ const Footer = () => {
   const links = 
   [
     [
-      "PoLearn Business",
-      "Teach on PoLearn",
-      "Get the app",
-      "About us",
-      "Contact us"
+      "poLearn business",
+      "teach on poLearn",
+      "get the app",
+      "about us",
+      "contact us"
     ],
     [
-      "Careers",
-      "Blog",
-      "Help and Support",
-      "Affiliate",
-      "Investors"
+      "careers",
+      "blog",
+      "help and support",
+      "affiliate",
+      "investors"
     ],
     [
-      "Terms",
-      "Privacy Policy",
-      "Cookie Settings",
-      "Sitemap",
-      "Accessibility statement"
+      "terms",
+      "privacy policy",
+      "cookie settings",
+      "sitemap",
+      "accessibility statement"
     ]
   ]
   return ( 
@@ -46,6 +48,7 @@ const Footer = () => {
         <section>
           <div className="container container-pdg">
             <div className="content">
+              <Link to="/" onClick={ () => window.scrollTo(0, 0) }><img width="60px" src={ appIcon } alt="" /></Link>
               <div className="footer-links">
               {
                 links.map(category => (
@@ -58,6 +61,14 @@ const Footer = () => {
                   </ul>
                 ))
               }
+                <ul>
+                  <span>Follow us</span>
+                  <div className="links">
+                    <span><a href="https://linkedin.com/Djoufson"><FaLinkedin/></a></span>
+                    <span><a href="https://github.com/Djoufson"><FaGithub/></a></span>
+                    <span><a href="https://facebook.com/djouf_lg"><FaFacebook/></a></span>
+                  </div>
+                </ul>
               </div>
               <div className="footer-bottom">
                 <h2>PoLearn</h2>

@@ -1,4 +1,4 @@
-const User = require('./../models/userModel')
+const User = require('./../models/user')
 
 exports.login = (req, res) => {
   console.log(req.body)

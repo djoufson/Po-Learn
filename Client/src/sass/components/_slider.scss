@@ -105,8 +105,12 @@
     }
 
     &.active-#{$i}{
-      transform: translateX($i * -100%);
-      transition: $transition-2x;
+      @for $j from 0 through 6 {
+        .slide-bg-#{$j} {
+          transform: translateX($i * -100%);
+          transition: $transition-2x;
+        }
+      }
     }
   }
 }

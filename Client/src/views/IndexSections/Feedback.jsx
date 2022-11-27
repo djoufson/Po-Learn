@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Input from "../components/Input"
 
 const Feedback = () => {
@@ -7,22 +6,14 @@ const Feedback = () => {
   const submitForm = (e) => {
     e.preventDefault()
   }
-  return ( 
+  return (
     <>
       <section className="feedback">
-        <div className="container container-pdg">
-          <div className="container content">
-            {/* <div className="teach-with-us">
-              <img src="" alt="" />
-              <div className="text">
-                <h2>Become an instructor</h2>
-                <p>Instructors from around the world teach millions of students on PoLearn. We provide the tools and skills to teach what you love</p>
-                <Link className="btn btn-dark" to='teach-on-polearn' >Start teaching today</Link>
-              </div>
-            </div> */}
+        <div className="container">
+          <div className="content">
             <div className="feedback-wrapper">
               <div className="text">
-                <h2>Leave us a message</h2>
+                <h1>Leave us a message</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo dolor itaque magnam praesentium illo vero consequuntur sint a distinctio vitae quasi ratione fugit neque omnis amet architecto, possimus autem?</p>
               </div>
               <div className="form">

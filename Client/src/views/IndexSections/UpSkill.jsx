@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
-import teach from "./../../assets/teach.jpg"
+import upskill from "../../assets/impressions1.jpg"
 
-const TeachSection = () => {
+const Upskill = () => {
   return ( 
     <>
-      <section className="feedback">
+      <section className="upskill">
         <div className="container">
           <div className="content">
             <div className="teach-with-us">
-              <img src={ teach } alt="" />
               <div className="text">
-                <h1>Become an instructor</h1>
+                <h1>Upskill your team with PoLearn Business</h1>
                 <p>Instructors from around the world teach millions of students on PoLearn. We provide the tools and skills to teach what you love</p>
                 <Link className="btn btn-dark" to='/teach-on-polearn' >Start teaching today</Link>
               </div>
+              <img width="50%" src={ upskill } alt="" />
             </div>
           </div>
         </div>
@@ -22,4 +22,4 @@ const TeachSection = () => {
    );
 }
  
-export default TeachSection;
+export default Upskill;

@@ -50,14 +50,14 @@
         background-color: rgba(0, 0, 0, 0.144);
       }
 
-      // &:active{
-      //   background-color: transparent;
-      // }
       &.active{
         background-color: rgba(0, 0, 0, 0.411);
         border-right: 10px solid $secondary;
       }
 
+      svg{
+        transform: translateX(5px);
+      }
       span{
         color: inherit;
         width: 0;

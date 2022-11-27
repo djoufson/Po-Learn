@@ -1,4 +1,4 @@
-const Course = require('../models/courseModel')
+const Course = require('../models/course')
 
 exports.getSelection = (req, res) => {
   const blogs = [
