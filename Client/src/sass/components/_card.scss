@@ -58,6 +58,16 @@
       font-size: 15px;
       line-height: 19px;
     }
+
+    .card-bottom{
+      display: flex;
+      gap: 10px;
+      width: 100%;
+
+      .btn-primary{
+        width: 100%;
+      }
+    }
   }
 
   &:hover{

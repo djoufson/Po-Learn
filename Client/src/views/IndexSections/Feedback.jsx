@@ -11,7 +11,7 @@ const Feedback = () => {
     <>
       <section className="feedback">
         <div className="container container-pdg">
-          <div className="content">
+          <div className="container content">
             {/* <div className="teach-with-us">
               <img src="" alt="" />
               <div className="text">

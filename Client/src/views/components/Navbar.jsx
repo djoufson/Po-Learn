@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { RiShoppingCart2Line } from "react-icons/ri"
+import appIcon from '../../assets/appicon.png'
 import search from '../../assets/search.svg'
 import arrow from '../../assets/arrow.svg'
 
@@ -49,7 +50,13 @@ const Navbar = () => {
     <header>
       <nav className="nav">
         <div className="nav-logo">
-          <Link to='/'>
+          <Link to='/'
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px'
+            }}>
+            <img width="50px" src={ appIcon } alt="" />
             <p>PoLearn</p>
           </Link>
         </div>
@@ -85,11 +92,10 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
           <div className="dropdown cart">
-            <Link className="btn"><RiShoppingCart2Line/></Link>
+            <Link className="btn" to="/"><RiShoppingCart2Line/></Link>
             <div className="content">
               <div className="content-wrapper">
                 <p>The courses you added to your cart</p>
-
               </div>
             </div>
           </div>

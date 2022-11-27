@@ -8,6 +8,16 @@
   font-weight: 600;
   transition: $base-transition;
 
+  >*{
+    transform: translateY(22%);
+  }
+
+  &.btn-rounded {
+    width: auto;
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+
   &.btn-primary {
     color: $white-accentuation;
     background-color: $secondary;
@@ -64,6 +74,7 @@
 }
 
 .container{
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
 
@@ -87,4 +98,24 @@ h2 {
   font-weight: 700;
   font-family: serif;
   margin: 15px 0;
+}
+
+// Back to top button
+
+#back-to-top{
+  background-color: white;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: -1;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: $base-transition;
+
+  &.visible{
+    opacity: 1;
+    transform: translateY(0);
+    z-index: initial;
+    transition: $base-transition;
+  }
 }

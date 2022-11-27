@@ -9,8 +9,8 @@ import Navbar from "./components/Navbar";
 
 
 const Login = () => {
-  useLoad()
   const [name, setName] = useState('')
+  useLoad(name)
   const submission = (e) => {
     e.preventDefault()
   }

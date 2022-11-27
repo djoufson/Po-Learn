@@ -147,6 +147,14 @@ code {
   font-weight: 600;
   transition: all ease-in-out 0.1s;
 }
+.btn > * {
+  transform: translateY(22%);
+}
+.btn.btn-rounded {
+  width: auto;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
 .btn.btn-primary {
   color: #f7f3f3;
   background-color: #7f4efc;
@@ -194,6 +202,7 @@ code {
 }
 
 .container {
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -213,6 +222,23 @@ h2 {
   font-weight: 700;
   font-family: serif;
   margin: 15px 0;
+}
+
+#back-to-top {
+  background-color: white;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: -1;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all ease-in-out 0.1s;
+}
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: initial;
+  transition: all ease-in-out 0.1s;
 }
 
 .card-formation {
@@ -267,6 +293,14 @@ h2 {
 .card-formation .master-details .details-content {
   font-size: 15px;
   line-height: 19px;
+}
+.card-formation .master-details .card-bottom {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.card-formation .master-details .card-bottom .btn-primary {
+  width: 100%;
 }
 .card-formation:hover .master-details {
   transform: translateX(100%);
@@ -601,6 +635,8 @@ footer .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../assets/bgImage.png");
+  background-size: contain;
 }
 .page.log-in h2 {
   margin-bottom: 25px;
@@ -643,23 +679,24 @@ footer .content {
   height: 40px;
 }
 
-.feedback {
+.feedback.gray, .upskill.gray {
   background-color: #f7f3f3;
 }
-.feedback .content {
+.feedback .content, .upskill .content {
   max-width: 900px;
   margin: auto;
 }
-.feedback .content > div {
+.feedback .content > div, .upskill .content > div {
   display: flex;
   align-items: center;
-  margin: 50px 0;
+  justify-content: space-around;
   gap: 70px;
+  margin: 50px 0;
 }
-.feedback .content > div > div {
-  width: 50%;
+.feedback .content > div div.text, .upskill .content > div div.text {
+  max-width: 25rem;
 }
-.feedback .form {
+.feedback .form, .upskill .form {
   max-width: 400px;
 }
 
@@ -669,9 +706,49 @@ footer .content {
   display: flex;
 }
 .profile-page .dashboard {
-  width: 300px;
+  width: 60px;
+  display: flex;
+  padding-top: 15px;
+  flex-direction: column;
+  overflow: hidden;
   background-color: #1c1d1f;
+  transition: all ease-in-out 0.1s;
 }
 .profile-page .dashboard h1 a {
   color: white;
+}
+.profile-page .dashboard:hover {
+  width: 300px;
+  transition: all ease-in-out 0.1s;
+}
+.profile-page .dashboard:hover span {
+  color: inherit;
+  width: auto;
+}
+.profile-page .dashboard button {
+  width: 100%;
+  text-align: start;
+  height: 60px;
+  border: none;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
+  background-color: transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  color: #fff;
+}
+.profile-page .dashboard button:hover {
+  background-color: rgba(0, 0, 0, 0.144);
+}
+.profile-page .dashboard button.active {
+  background-color: rgba(0, 0, 0, 0.411);
+  border-right: 10px solid #7f4efc;
+}
+.profile-page .dashboard button span {
+  color: inherit;
+  width: 0;
+  overflow: hidden;
 }

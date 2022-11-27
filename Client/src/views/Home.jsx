@@ -5,6 +5,8 @@ import Feedback from "./IndexSections/Feedback";
 import useLoad from "../utilities/hooks/useLoad";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import BackToTop from "./components/BackToTop";
+import TeachSection from "./IndexSections/TeachSection";
 
 
 const Home = () => {
@@ -12,23 +14,25 @@ const Home = () => {
 
   return ( 
     <>
-    <Navbar/>
+      <Navbar/>
       <div className="view">
         {/* Hero section */}
-        <section className="hero">
-          <div className="container">
-            <Hero/>
-          </div>
-        </section>
-
+        <Hero/>
+        
         {/* The catalog part */}
         <Selection/>
 
         {/* Partners part */}
         <Partners/>
 
+        {/* Teach on PoLearn */}
+        <TeachSection/>
+        
         {/* Feedback part */}
         <Feedback/>
+
+        {/* Back to top */}
+        <BackToTop/>
       </div>
       <Footer/>
     </>

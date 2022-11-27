@@ -1,7 +1,9 @@
+import useLoad from "../utilities/hooks/useLoad";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 const Teach = () => {
+  useLoad()
   return ( 
     <>
       <Navbar/>
@@ -12,5 +14,5 @@ const Teach = () => {
     </>
    );
 }
- 
+
 export default Teach;

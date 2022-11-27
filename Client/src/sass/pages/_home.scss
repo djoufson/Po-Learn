@@ -21,8 +21,10 @@
   }
 }
 
-.feedback{
-  background-color: $white-accentuation;  
+.feedback, .upskill{
+  &.gray{
+    background-color: $white-accentuation;  
+  }
 
   .content{
     max-width: 900px;
@@ -31,11 +33,12 @@
   .content>div {
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    justify-content: space-around;
     gap: 70px;
+    margin: 50px 0;
 
-    &>div{
-      width: 50%;
+    div.text{
+      max-width: 25rem;
     }
   }
 

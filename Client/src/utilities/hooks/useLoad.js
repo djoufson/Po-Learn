@@ -1,11 +1,9 @@
 import { useEffect } from 'react'
 
-const useLoad = (param) => {
+const useLoad = (dependencies) => {
   useEffect(()=>{
     window.scrollTo(0, 0)
-    console.log('redered')
-    console.log(window.scrollY)
-  }, [param])
+  }, [dependencies])
 }
 
 export default useLoad

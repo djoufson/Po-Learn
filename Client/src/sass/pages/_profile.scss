@@ -4,12 +4,64 @@
   display: flex;
 
   .dashboard{
-    width: 300px;
+    width: 60px;
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+    overflow: hidden;
     background-color: $primary;
-    
+    transition: $base-transition;
+    // *{
+    //   color: white;
+    // }
     h1{
       a{
         color: white;
+      }
+    }
+
+    &:hover{
+      width: 300px;
+      transition: $base-transition;
+
+      
+      span{
+        color: inherit;
+        width: auto;
+      }
+    }
+
+    button{
+      width: 100%;
+      text-align: start;
+      height: 60px;
+      border: none;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      overflow: hidden;
+      background-color: transparent;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      color: $white;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.144);
+      }
+
+      // &:active{
+      //   background-color: transparent;
+      // }
+      &.active{
+        background-color: rgba(0, 0, 0, 0.411);
+        border-right: 10px solid $secondary;
+      }
+
+      span{
+        color: inherit;
+        width: 0;
+        overflow: hidden;
       }
     }
   }

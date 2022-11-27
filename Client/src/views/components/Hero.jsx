@@ -19,12 +19,6 @@ const sliderContents = [
   }
 ]
 
-const checkSlidesNumber = () => sliderContents.length > 1
-
-const formatImageUrl = (s) => {
-  return `../../assets/${s}.png`
-}
-
 
 const Hero = () => {
   const [index, setIndex] = useState(0)
@@ -95,31 +89,35 @@ const Hero = () => {
 
   return ( 
     <>
-      <div className="hero">
-        <div className="slider">
-          <div className={ slideWrapperClass }>
-            {
-              sliderContents.map((s, i) => (
-                <div
-                  style={{
-                    backgroundImage: `url(/slide_${i + 1}.jpg)`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat"
-                  }}
-                  key={ s.id } className={ "slide-bg slide-bg-" + i }>
-                </div>
-              ))
-            }
+    <section className="hero">
+      <div className="container">
+        <div className="hero">
+          <div className="slider">
+            <div className={ slideWrapperClass }>
+              {
+                sliderContents.map((s, i) => (
+                  <div
+                    style={{
+                      backgroundImage: `url(/slide_${i + 1}.jpg)`,
+                      backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat"
+                    }}
+                    key={ s.id } className={ "slide-bg slide-bg-" + i }>
+                  </div>
+                ))
+              }
+            </div>
+            <div className="slider-cards">
+              <SliderCard slide={ slide1 } className={ slide1Class }/>
+              <SliderCard slide={ slide2 } className={ slide2Class }/>
+            </div>
           </div>
-          <div className="slider-cards">
-            <SliderCard slide={ slide1 } className={ slide1Class }/>
-            <SliderCard slide={ slide2 } className={ slide2Class }/>
-          </div>
+          <div className="filter"></div>
+          <button className="left" id="left-arrow" onClick={ slide }><img id="left-arrow" src={ arrow } alt="" /></button>
+          <button className="right" id="right-arrow" onClick={ slide }><img id="right-arrow" src={ arrow } alt="" /></button>
         </div>
-        <div className="filter"></div>
-        <button className="left" id="left-arrow" onClick={ slide }><img id="left-arrow" src={ arrow } alt="" /></button>
-        <button className="right" id="right-arrow" onClick={ slide }><img id="right-arrow" src={ arrow } alt="" /></button>
       </div>
+    </section>
     </>
   );
 }

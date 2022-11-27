@@ -16,13 +16,17 @@ const Profile = () => {
   const changeTab = (index) => {
     setCurrTab(tabs[index])
   }
+
   return ( 
-  <>
-  <div className="profile-page">
-    <DashNavigation changeTab={ changeTab }/>
-    <DashAside currTab={ currTab }/>
-  </div>
-  </> 
+    <>
+      <div className="profile-page">
+        {/* Dashbord Navigation Part */}
+        <DashNavigation changeTab={ changeTab }/>
+
+        {/* Dashbord Content Pages */}
+        <DashAside currTab={ currTab }/>
+      </div>
+    </> 
   );
 }
 
