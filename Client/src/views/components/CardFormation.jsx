@@ -7,7 +7,7 @@ const CardFormation = ({ formation, url, paht }) => {
     <>
       <div className="card-formation">
         <Link to={ url }>
-          <img className="img" src={ paht } alt=""></img>
+          <img className="img" src={ paht } alt={ formation.title }></img>
         </Link>
         <Link to={ url }><h3 className="card-title">{ formation.title }</h3></Link>
         <span className="card-author">{ formation.author }</span>

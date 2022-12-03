@@ -9,16 +9,22 @@ const Hero = () => {
       title: "Unlock the power of your people", 
       description: "PoLearn Business is trusted by 12.5K+ companies around the world", 
       link: "Request a demo",
-      url:"",
-      imagePath: "slide_3.jpg"
+      url:"#",
+      imagePath: "slide_1.jpg"
     },
     {
       id: 2,
-      title: "Unlock your to people", 
+      title: "Learning that gets you", 
+      description: "Skills for your present (and your future). Get started with us", 
+      imagePath: "slide_3.jpg"
+    },
+    {
+      id: 3,
+      title: "Unlock the power of your people", 
       description: "PoLearn Business is trusted by 12.5K+ companies around the world", 
       link: "Request a demo",
-      url:"",
-      imagePath: "/slide_1.jpg"
+      url:"#",
+      imagePath: "slide_2.jpg"
     }
   ]
   const [index, setIndex] = useState(0)

@@ -10,8 +10,11 @@ const Upskill = () => {
             <div className="teach-with-us">
               <div className="text">
                 <h1>Upskill your team with PoLearn Business</h1>
-                <p>Instructors from around the world teach millions of students on PoLearn. We provide the tools and skills to teach what you love</p>
-                <Link className="btn btn-dark" to='/teach-on-polearn' >Start teaching today</Link>
+                <ul className="bulleted-list">
+                  <li>Unlimited access to 17,000+ top PoLearn courses, anytime, anywhere</li>
+                  <li>International course collection in 14 languages</li>
+                  <li>Certifications in tech and business</li>
+                </ul>
               </div>
               <img width="50%" src={ upskill } alt="" />
             </div>

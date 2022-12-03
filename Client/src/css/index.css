@@ -137,6 +137,14 @@ code {
   text-align: center;
 }
 
+.bulleted-list {
+  margin-left: 15px;
+}
+.bulleted-list li {
+  list-style-type: disc;
+  padding: 5px;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -266,7 +274,7 @@ h2 {
 }
 .card-formation .img {
   height: 160px;
-  background-color: orange;
+  font-family: "Courier New", Courier, monospace;
 }
 .card-formation .master-details {
   z-index: 500;

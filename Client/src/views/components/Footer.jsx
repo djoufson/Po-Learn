@@ -48,7 +48,14 @@ const Footer = () => {
         <section>
           <div className="container container-pdg">
             <div className="content">
-              <Link to="/" onClick={ () => window.scrollTo(0, 0) }><img width="60px" src={ appIcon } alt="" /></Link>
+              <Link 
+                to="/" 
+                onClick={ () => window.scrollTo(0, 0) }
+                style={{
+                  alignSelf: "start"
+                }}>
+                  <img width="60px" src={ appIcon } alt="" />
+              </Link>
               <div className="footer-links">
               {
                 links.map(category => (

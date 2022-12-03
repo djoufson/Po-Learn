@@ -1,3 +1,11 @@
 .center{
   text-align: center;
 }
+
+.bulleted-list{
+  margin-left: 15px;
+  li{
+    list-style-type: disc;  
+    padding: 5px;
+  }
+}
