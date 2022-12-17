@@ -245,7 +245,7 @@ h2 {
 #back-to-top.visible {
   opacity: 1;
   transform: translateY(0);
-  z-index: initial;
+  z-index: 60;
   transition: all ease-in-out 0.1s;
 }
 
@@ -509,7 +509,7 @@ h2 {
 }
 .slider .slide-content {
   z-index: -1;
-  max-width: 400px;
+  max-width: 370px;
   padding: 20px;
   top: 50%;
   left: 60px;

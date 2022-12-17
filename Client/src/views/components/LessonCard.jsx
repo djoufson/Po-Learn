@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 
 const LessonCard = ({ slug, lesson, activeId }) => {
   const formatDuration = (minutes) => {
-    return minutes + " min"
+    let hours = minutes / 60
+    console.log(hours)
+    hours = Math.floor(hours)
+    console.log(hours)
+    if(hours > 0){
+      minutes = minutes % (hours*60)
+      console.log(minutes)
+    }
+    return `${ (hours > 0) ? hours + "h": ""}${ minutes }min`
   }
 
   const formatClassName = () => {
@@ -14,7 +22,7 @@ const LessonCard = ({ slug, lesson, activeId }) => {
     <Link to={"/courses/" + slug + "/" + lesson.id}>
       <div className={ formatClassName() }>
         <img src="" alt="" className="lesson-thumbnail" />
-        <div className="desc">
+        <div>
           <p className="lesson-title">{ lesson.title }</p>
           <p className="lesson-duration">{ formatDuration(lesson.length) }</p>
         </div>

@@ -21,7 +21,7 @@ const Course = () => {
     {
       id: 1,
       title: "Why to choose Python",
-      length: 3
+      length: 90
     },
     {
       id: 2,

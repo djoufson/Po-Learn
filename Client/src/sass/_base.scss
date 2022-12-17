@@ -115,7 +115,7 @@ h2 {
   &.visible{
     opacity: 1;
     transform: translateY(0);
-    z-index: initial;
+    z-index: 60;
     transition: $base-transition;
   }
 }
