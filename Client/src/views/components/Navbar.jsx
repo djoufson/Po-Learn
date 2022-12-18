@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { RiShoppingCart2Line } from "react-icons/ri"
-import { FaUserNinja, FaRegUser } from "react-icons/fa"
+import { FaUserNinja, /*FaRegUser*/ } from "react-icons/fa"
 import appIcon from '../../assets/appicon.png'
 import search from '../../assets/search.svg'
 import arrow from '../../assets/arrow.svg'
@@ -99,7 +99,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <Link to='/profile' className="btn btn-dark btn-rounded"><FaRegUser/></Link>
+          <Link to='/profile' className="btn btn-dark btn-rounded"><FaUserNinja/></Link>
           <Link to='/login' className="btn btn-light">Log in</Link>
           <Link to='/sign-up' className="btn btn-dark">Sign up</Link>
         </div>

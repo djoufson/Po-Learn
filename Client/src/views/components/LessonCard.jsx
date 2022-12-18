@@ -14,7 +14,7 @@ const LessonCard = ({ slug, lesson, activeId }) => {
   }
 
   const formatClassName = () => {
-    return `lesson-card ${(lesson.id == activeId) ? "active" : ""}`
+    return `lesson-card ${(lesson.id === activeId) ? "active" : ""}`
   }
 
   return ( 

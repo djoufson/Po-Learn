@@ -12,6 +12,7 @@ const SignUp = () => {
   const [name, setName] = useState('')
   const submission = (e) => {
     e.preventDefault()
+    console.log(name)
   }
   return ( 
     <>

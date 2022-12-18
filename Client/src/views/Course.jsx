@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+// import vid from "../assets/00-Welcome to new JavaScript course.mp4"
 import useLoad from "../utilities/hooks/useLoad";
 import Footer from "./components/Footer";
 import LessonCard from "./components/LessonCard";
@@ -46,14 +47,21 @@ const Course = () => {
     <>
     <Navbar/>
     <div className="view">
-      <div className="container">
-        <h1>{ course.title } / { id }</h1>
-        <video src=""></video>
+      <div className="container watch">
+        <video src="" controls></video>
+        <div className="infos">
+          <h1>{ course.title }</h1>
+          <div className="author">
+            <img src="" alt="" />
+            <span>{ course.author }</span>
+          </div>
+        </div>
         <div className="playlist">
           <ul>
             {
               lessons.map(lesson => (
                 <li key={ lesson.id }>
+                  <span>{ lesson.id }</span>
                   <LessonCard 
                     activeId={ id }
                     slug={ slug } 
@@ -66,7 +74,7 @@ const Course = () => {
         <div className="subscribe">
           <h2>{ course.title }</h2>
           <p>{ course.details }</p>
-          <Link to="#" className="btn btn-primary">{ course.price } $</Link>
+          <Link to="#" className="btn btn-dark">Purchase { course.price } $</Link>
         </div>
       </div>
     </div>

@@ -303,7 +303,7 @@ h2 {
 .card-formation .master-details .card-bottom {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 10px;
   width: 100%;
 }
@@ -941,4 +941,59 @@ footer .content {
   color: inherit;
   width: 0;
   overflow: hidden;
+}
+
+.watch {
+  position: relative;
+}
+.watch h1, .watch h2 {
+  text-transform: capitalize;
+}
+.watch video {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #000;
+}
+.watch .infos {
+  max-width: 60%;
+}
+.watch .playlist {
+  margin-top: 40px;
+}
+.watch .playlist li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(106, 111, 115, 0.4196078431);
+  padding-bottom: 15px;
+  padding-left: 15px;
+  transition: all ease-in-out 0.1s;
+}
+.watch .playlist li a {
+  width: 100%;
+}
+.watch .playlist li span {
+  transform: translateY(10px);
+  font-size: 20px;
+  font-weight: 600;
+}
+.watch .playlist li:hover {
+  background-color: #f7f3f3;
+  transition: all ease-in-out 0.4s;
+}
+.watch .subscribe {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 0;
+  z-index: 10;
+  top: 500px;
+  width: 400px;
+  background-color: #7f4efc;
+  padding: 20px;
+}
+.watch .subscribe h2, .watch .subscribe p {
+  color: #fff;
 }

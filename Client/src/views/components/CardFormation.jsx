@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa"
-import image from "./../../assets/slide_2.jpg"
 
 const CardFormation = ({ formation, url, paht }) => {
   return ( 

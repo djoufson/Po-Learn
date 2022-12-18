@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import upskill from "../../assets/impressions1.jpg"
 
 const Upskill = () => {

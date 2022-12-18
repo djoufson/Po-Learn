@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Input = ({ id, placeholder, setValue, type }) => {
   const [className, setClassName] = useState('input-wrapper')
-  const [entry, setEntry] = useState(document.getElementById(id))
+  const entry = document.getElementById(id)
   const handleClick = (e) => {
     if (className === 'input-wrapper focus'){
       return

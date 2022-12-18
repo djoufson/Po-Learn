@@ -5,6 +5,7 @@ const Feedback = () => {
   const [email, setEmail] = useState('')
   const submitForm = (e) => {
     e.preventDefault()
+    console.log(email)
   }
   return (
     <>
