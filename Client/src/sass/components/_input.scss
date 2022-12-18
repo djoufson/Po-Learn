@@ -12,20 +12,27 @@
   justify-content: center;
   height: 50px;
   border: $border-primary;
+  transition: $transition-2x;
 
   input{
     border: none;
     font-size: 16px;
     height: 0;
-    transition: $base-transition;
-
-    &:focus{
-      outline: none;
-      animation: input-anim 0.2s forwards;
-    }
+    transition: $transition-2x;
   }
 
+  &.focus{
+    input{
+      outline: none;
+      animation: input-anim 0.2s forwards;
+      transition: $transition-2x;
+    }
 
+    label{
+      font-size: 12px;
+      transition: $transition-2x;
+    }
+  }
 
   .placeholder{
     cursor: text;
@@ -43,4 +50,5 @@
   height: 100%;
   background-color: transparent;
   z-index: 10;
+  transition: $transition-2x;
 }
